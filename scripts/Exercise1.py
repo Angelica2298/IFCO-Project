@@ -1,5 +1,6 @@
 import pandas as pd
 import os
+import json
 
 # Test 1:  Distribution of Crate Type per Company #
 ###################################################
@@ -16,7 +17,7 @@ def crate_distribution(df):
     distribution = df.groupby(['company_name', 'crate_type']).size().reset_index(name='order_count')
     return distribution
 
-if __name__ == "__main__":
-    orders_df = load_data("orders.csv")
-    distribution = crate_distribution(orders_df)
-    print(distribution)
+orders_df = load_data("orders.csv")
+distribution = crate_distribution(orders_df)
+print(distribution)
+

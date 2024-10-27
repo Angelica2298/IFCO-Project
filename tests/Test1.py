@@ -5,7 +5,7 @@ import os
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from scripts.OrdersAnalisys import crate_distribution
+from scripts.Exercise1 import crate_distribution
 
 class TestCrateDistribution(unittest.TestCase):
     def setUp(self):
