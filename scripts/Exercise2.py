@@ -13,6 +13,7 @@ orders = pd.read_csv("orders.csv", sep=';')
 
 #df_orders = pd.read_csv('Orders.csv')
 
+## Function that retreives full name information
 def get_full_name(contact_data):
     try:
         # Check null values

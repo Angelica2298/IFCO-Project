@@ -5,7 +5,7 @@ import os
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from scripts.Exercise1 import crate_distribution
+from scripts.Exercise1 import get_crate_distribution
 
 class TestCrateDistribution(unittest.TestCase):
     def setUp(self):
@@ -23,7 +23,7 @@ class TestCrateDistribution(unittest.TestCase):
             'crate_type': ['Metal', 'Plastic', 'Wood', 'Plastic'],
             'order_count': [1, 1, 1, 2]
         })
-        result = crate_distribution(self.df)
+        result = get_crate_distribution(self.df)
         print(result)
 
         pd.testing.assert_frame_equal(result, expected_output)
@@ -35,7 +35,7 @@ class TestCrateDistribution(unittest.TestCase):
             'crate_type': ['Metal', 'Plastic', 'Plastic'],
             'order_count': [1, 1, 2]
         })
-        result = crate_distribution(self.df)
+        result = get_crate_distribution(self.df)
         print(result)
 
         ## Try to evaluate assert condition, if it's equal it must fail otherwise the test has been successful
