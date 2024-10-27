@@ -13,11 +13,11 @@ orders = pd.read_csv("orders.csv", sep=';')
 
 #df_orders = pd.read_csv('Orders.csv')
 
-def extract_full_name(contact_data):
+def get_full_name(contact_data):
     try:
         # Check null values
         if pd.isna(contact_data) or not isinstance(contact_data, str):
-            return 'John Doe'  # Placeholder en caso de datos vacíos
+            return 'John Doe'
 
         # Replace single quotes with double quotes
         data = json.loads(contact_data.replace("'", '"'))
@@ -38,7 +38,7 @@ def extract_full_name(contact_data):
 # creation of DataFrame with order ID and contact full Name
 df_1 = pd.DataFrame({
     'order_id': orders['order_id'],
-    'contact_full_name': orders['contact_data'].apply(extract_full_name)
+    'contact_full_name': orders['contact_data'].apply(get_full_name)
 })
 
 print(df_1)
