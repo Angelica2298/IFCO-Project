@@ -26,31 +26,34 @@ The technologies used for this development are:
 
 ## 📝 Installation
 
-__1.__ Clone the repo using
+ __1.__ Clone the repo using
 
 ```bash
 git clone https://github.com/Angelica2298/IFCO-Project.git
 ```
 
-__2.__ Open Visual Studio Code
+ __2.__ Open Visual Studio Code
 
-__3.__ Navigate to repository path
+ __3.__ Navigate to repository path
 
 ```bash
 cd /repository_path
 ```
 
-__4.__ Activate virtual environment
+ __4.__ Activate virtual environment
 
 ```bash
 ifcoenv\Scripts\activate
 ```
 
+
+
 ## 🏃 Execution
 
 - In the folder `scripts` you will find the solution to each exercise, indicated by the number of the specific test.
-- In the folder `tests` you will find the Unit Tests of every exercise, also indicated by its number.
+- In the folder `tests` you will find the Unit Tests of every exercise, also indicated by their number.
 
-E.g.: `tests/Test1.py` is the **Unit test** file of `scripts/Exercise1.py` script.
+> [!NOTE]  
+> E.g.: `tests/Test1.py` is the **Unit test** file of `scripts/Exercise1.py` script.
 
 Run each script separately and validate that the console Output information is correct, then run the corresponding Unit Test script.
