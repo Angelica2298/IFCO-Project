@@ -7,8 +7,12 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from scripts.Exercise2 import get_full_name
 
+# Unit Test Exercise 2:  DataFrame of Orders with Full Name of the Contact #
+############################################################################
+
 class TestOrdersDataFrame(unittest.TestCase):
     def setUp(self):
+        # Data for our tests
         self.df_1 = pd.DataFrame({
             'contact_data': [
                 '[{"contact_name":"Curtis", "contact_surname":"Jackson", "city":"Chicago", "cp": "12345"}]',

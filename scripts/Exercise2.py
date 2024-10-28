@@ -3,7 +3,7 @@ import pandas as pd
 import json
 
 # Test 2: DataFrame of Orders with Full Name of the Contact #
-##############################################################
+#############################################################
 
 # Identify resources folder
 os.chdir("resources")
@@ -42,4 +42,5 @@ df_1 = pd.DataFrame({
     'contact_full_name': orders['contact_data'].apply(get_full_name)
 })
 
+print(">>> Test 2: DataFrame of Orders with Full Name of the Contact <<<")
 print(df_1)

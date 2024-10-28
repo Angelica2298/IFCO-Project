@@ -7,6 +7,9 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from scripts.Exercise1 import get_crate_distribution
 
+# Unit Test Exercise 1:  Distribution of Crate Type per Company #
+#################################################################
+
 class TestCrateDistribution(unittest.TestCase):
     def setUp(self):
         # Data for our tests

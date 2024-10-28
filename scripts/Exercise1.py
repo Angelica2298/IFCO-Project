@@ -19,5 +19,7 @@ def get_crate_distribution(df):
 
 orders_df = load_data("orders.csv")
 distribution = get_crate_distribution(orders_df)
+
+print(">>> Test 1:  Distribution of Crate Type per Company <<<")
 print(distribution)
 

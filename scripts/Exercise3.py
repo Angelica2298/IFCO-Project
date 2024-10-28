@@ -3,7 +3,7 @@ import pandas as pd
 import json
 
 # Test 3: DataFrame of Orders with Contact Address #
-##############################################################
+####################################################
 
 # Identify resources folder
 os.chdir("resources")
@@ -39,4 +39,5 @@ df_2 = pd.DataFrame({
     'contact_address': orders['contact_data'].apply(get_full_address)
 })
 
+print(">>> Test 3: DataFrame of Orders with Contact Address <<<")
 print(df_2.to_string())
